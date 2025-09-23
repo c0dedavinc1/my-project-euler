@@ -1,0 +1,7 @@
+FermatFactor(N): // N should be odd
+    a ← ceiling(sqrt(N))
+    b2 ← a*a - N
+    repeat until b2 is a square:
+        a ← a + 1
+        b2 ← a*a - N 
+    return or a + sqrt(b2)
